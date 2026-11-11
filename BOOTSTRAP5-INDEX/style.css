@@ -1,0 +1,83 @@
+/* Global CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url("images/bg-black.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Main Section */
+#main-section {
+  background-color: #000000;
+}
+
+/* Logo */
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555555;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Navigation */
+.navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Profile Image */
+.profile-img {
+  max-width: 350px;
+  width: 100%;
+  padding: 10px;
+  background-color: #555555;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+/* Footer */
+#footer {
+  background-color: transparent;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .profile-img {
+    max-width: 280px;
+  }
+}

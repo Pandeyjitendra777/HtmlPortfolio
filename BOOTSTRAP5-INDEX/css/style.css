@@ -1,0 +1,31 @@
+:root {
+  /* colors */
+  --color-primary: #ddd;
+}
+
+/* Text Variable */
+.text-18 {
+  font-size: 18px;
+}
+/* Navbar css */
+.navbar-nav li {
+  margin-right: 30px;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/static/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Hero css */
+.hero-section {
+  margin-top: -100px;
+  padding-top: 150px;
+  background: url(../images/hero-bg.jpg) top center no-repeat;
+  background-size: cover;
+}
