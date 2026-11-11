@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-black.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+button,
+.menu-header a {
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+#main-section {
+  margin: 20px;
+  background-color: #000000;
+  padding: 20px 0;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.button-header {
+  margin-left: auto;
+}
+
+.menu-header > a {
+  border-radius: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #555555;
+  padding: 8px;
+}
+.menu-header > a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.menu-header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-header ul li {
+  margin-right: 20px;
+}
+.menu-header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu-header ul li a:hover {
+  color: blue;
+}
+#btn-available {
+  border-radius: 30px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #555555;
+  border: none;
+  margin-right: 20px;
+}
+#btn-available:hover {
+  background-color: #ffffff;
+  color: #555555;
+}
+#btn-reach {
+  border-radius: 30px;
+  padding: 10px;
+  color: #555555;
+  background-color: #ffffff;
+  border: none;
+}
+#btn-reach:hover {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+/* Profile CSS */
+#profile {
+  margin: 30px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-content h2 {
+  color: #fff;
+  background: gray;
+  width: max-content;
+  padding: 10px;
+  border-radius: 30px;
+}
+.profile-content h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.profile-content p {
+  color: #ffffff;
+  max-width: 75%;
+}
+.profile-image img {
+  width: auto;
+  padding: 10px;
+  background: gray;
+  display: block;
+  border-radius: 12px;
+}
+/* Buttons CSS */
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.btn-project {
+  border-radius: 30px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #555555;
+  border: none;
+  margin-right: 20px;
+}
+.btn-project:hover {
+  background-color: white;
+  color: #000;
+}
+.btn-download {
+  border-radius: 30px;
+  padding: 10px;
+  color: #555555;
+  background-color: #ffffff;
+  border: none;
+}
+.btn-download:hover {
+  background-color: #555555;
+  color: white;
+}
+#company-working {
+  border-top: 2px solid gray;
+  padding: 20px;
+}
+#company-working h5 {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+.company-lists ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-lists ul li {
+  color: white;
+  list-style-type: none;
+  margin: 0 20px;
+}
+#footer p {
+  color: white;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  #main-section {
+    margin: 10px;
+  }
+
+  .menu-header {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .menu-header ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .button-header {
+    margin-left: 0;
+  }
+
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-content p {
+    max-width: 100%;
+  }
+
+  .profile-content h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-image img {
+    max-width: 280px;
+  }
+
+  .company-lists ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
