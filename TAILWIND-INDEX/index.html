@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Developer Portfolio</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main id="main-section" class="mx-5 my-5 bg-black px-5 py-5">
+      <!-- Header Section -->
+      <header id="header">
+        <nav class="flex flex-wrap items-center gap-5">
+          <!-- Logo -->
+          <a
+            href="/"
+            aria-label="Home"
+            class="flex h-11 w-11 items-center justify-center rounded-full bg-gray-600 text-white no-underline transition hover:bg-white hover:text-black"
+          >
+            MA
+          </a>
+
+          <!-- Navigation Links -->
+          <ul class="flex flex-wrap items-center gap-5 list-none p-0">
+            <li>
+              <a
+                href="#projects"
+                class="text-white transition hover:text-blue-500"
+              >
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#about"
+                class="text-white transition hover:text-blue-500"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                class="text-white transition hover:text-blue-500"
+              >
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#journal"
+                class="text-white transition hover:text-blue-500"
+              >
+                Journal
+              </a>
+            </li>
+          </ul>
+
+          <!-- Header Buttons -->
+          <div class="ml-auto flex flex-wrap gap-3">
+            <button
+              class="rounded-full bg-gray-600 px-4 py-2 text-white transition hover:bg-white hover:text-gray-600"
+            >
+              Available for work
+            </button>
+
+            <a
+              href="#contact"
+              class="rounded-full bg-white px-4 py-2 text-gray-600 transition hover:bg-gray-600 hover:text-white"
+            >
+              Reach me Out
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Profile Section -->
+      <section id="about" class="my-12 px-5">
+        <div
+          class="flex flex-col items-center justify-center gap-8 md:flex-row"
+        >
+          <!-- Profile Content -->
+          <div class="w-full md:w-7/12">
+            <p
+              class="mb-4 inline-block rounded-full bg-gray-600 px-4 py-2 text-white"
+            >
+              Frontend Developer
+            </p>
+
+            <h1 class="text-4xl font-bold text-white md:text-5xl">
+              I build fast, scalable
+              <br />
+              web experiences
+            </h1>
+
+            <p class="mt-4 max-w-xl text-gray-300">
+              I build accessible, responsive and pixel-perfect web experiences
+              using modern frontend technologies. I enjoy combining design and
+              engineering to create meaningful digital experiences.
+            </p>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="w-full text-center md:w-5/12">
+            <img
+              src="./images/dev-img.jpeg"
+              alt="Frontend developer portrait"
+              loading="lazy"
+              class="mx-auto w-full max-w-87.5 rounded-xl bg-gray-600 p-2 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Action Buttons -->
+      <section id="projects" class="mb-12 flex flex-wrap justify-center gap-4">
+        <a
+          href="#projects"
+          class="rounded-full bg-gray-600 px-5 py-3 text-white transition hover:bg-white hover:text-black"
+        >
+          View Projects
+        </a>
+
+        <a
+          href="#"
+          class="rounded-full bg-white px-5 py-3 text-gray-600 transition hover:bg-gray-600 hover:text-white"
+        >
+          Download Resume
+        </a>
+      </section>
+
+      <!-- Company Section -->
+      <section id="companies" class="border-t-2 border-gray-500 px-5 py-8">
+        <h2 class="mb-6 text-center text-lg font-semibold text-white">
+          Trusted by companies
+          <br />
+          <span class="text-sm font-normal text-gray-400">
+            (Companies worked for)
+          </span>
+        </h2>
+
+        <ul
+          class="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 list-none p-0 text-white"
+        >
+          <li>FACEBOOK</li>
+          <li>GOOGLE</li>
+          <li>TWITTER</li>
+          <li>INSTAGRAM</li>
+          <li>LINKEDIN</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="py-4 text-center">
+      <p class="text-sm text-white">
+        &copy; 2026 Jitendra Pandey. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
